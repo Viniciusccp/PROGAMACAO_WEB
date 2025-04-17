@@ -182,8 +182,8 @@ footer {
     font-size: 16px;
     border: 1px solid #c59d5f;
     border-radius: 8px;
-    background-color: #1e1e1e;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     transition: all 0.3s ease;
     appearance: none;
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20fill%3D%22%23c59d5f%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2220%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M7%2010l5%205%205-5H7z%22/%3E%3C/svg%3E");
@@ -359,7 +359,6 @@ html {
     transition: background-color 0.3s ease, transform 0.2s ease;
     display: inline-block;
     margin-top: auto;
-    /* Coloca o botão na parte inferior do produto */
 }
 
 .botao-compra:hover {
@@ -371,3 +370,4 @@ html {
     transform: translateY(-5px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
+
