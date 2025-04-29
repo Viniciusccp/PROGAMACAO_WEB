@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda - Barbearia Luxury</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container topo">
+            <h1 class="logo">Barbearia Luxury</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="principal.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="sobre.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="agenda">
+            <h2>Agende seu horário</h2>
+            <p>Escolha um barbeiro, selecione a data e o serviço desejado.</p>
+
+            <div class="agenda-container">
+                <form class="form-agenda">
+                    <label for="barbeiro">Barbeiro:</label>
+                    <select id="barbeiro" name="barbeiro">
+                        <option value="joao">Gustavo</option>
+                        <option value="pedro">Vinicius</option>
+                        <option value="lucas">Rafael</option>
+                    </select>
+
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" />
+
+                    <label for="servico">Serviço:</label>
+                    <select id="servico" name="servico">
+                        <option value="corte">Corte</option>
+                        <option value="corte_barba">Corte e Barba</option>
+                        <option value="barba">Barba</option>
+                        <option value="quimica">Química</option>
+                        <option value="hidratação">Hidratação</option>
+                    </select>
+
+                    <a href="#horarios" class="botao-entrada">Ver Horários</a>
+                </form>
+            </div>
+
+            <div id="horarios" class="calendario-placeholder">
+                <p><strong>Horários disponíveis:</strong></p>
+                <div class="horarios-lista">
+                    <span class="horario">10:00</span>
+                    <span class="horario">11:00</span>
+                    <span class="horario">14:00</span>
+                    <span class="horario">15:30</span>
+                    <span class="horario">16:30</span>
+                    <span class="horario">18:00</span>
+                </div>
+
+                <button id="confirmar-btn" class="botao-confirmar" style="display: none;">Confirmar Reserva</button>
+                <p id="mensagem-confirmacao" class="mensagem-reserva" style="display: none;">✅ Reserva feita com
+                    sucesso!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Barbearia Luxury. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
